@@ -301,11 +301,20 @@
   </footer>
 
 
-  <!-- pdf iframe lightbox - looked at stack overflow -->
+  <!-- pdf iframe lightbox -->
+  <!-- make a backdrop overlay -->
   <div id="overlay"
     class="hidden z-50 fixed w-full h-screen left-0 top-0 bg-black/70 backdrop-blur place-items-center py-20">
-    <button id="overlay-close"
-      class="h-10 w-10 inline-flex absolute border-white border text-white items-center justify-center top-10 right-4">X</button>
+
+    <!-- button to close overlay -->
+    <button 
+      id="overlay-close"
+      class="h-10 w-10 inline-flex absolute border-white border text-white items-center justify-center top-10 right-4"
+    >
+      X
+    </button>
+
+    <!-- load pdf preview in google pdf previewer - stack overflow -->
     <iframe id="pdf"
       src="https://docs.google.com/gview?a=v&pid=explorer&chrome=false&api=true&embedded=true&srcid=1Ok0--hUHoUJG_Sr4dRz8ghDQ_8ek2D9R&hl=en&embedded=true"
       class="hidden w-full max-w-7xl p-4 h-full" frameborder="0"></iframe>
