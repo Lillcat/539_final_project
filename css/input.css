@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-cavern-pink-50;
+    @apply text-cavern-pink-950;
+  }
+}
+
+@layer components {
+  .container {
+    @apply mx-auto max-w-7xl px-4;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-4 py-2 text-sm font-medium text-white bg-cavern-pink-600 rounded-lg hover:bg-cavern-pink-700 hover:text-cavern-pink-50 focus:ring-4 focus:outline-none focus:ring-cavern-pink-300;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center px-4 py-2 text-sm font-medium text-cavern-pink-950 bg-cavern-pink-50 rounded-lg hover:bg-cavern-pink-100 focus:ring-4 focus:outline-none focus:ring-cavern-pink-300;
+  }
+
+  .btn-secondary-outline {
+    @apply inline-flex items-center justify-center px-4 py-2 text-sm font-medium text-cavern-pink-50 bg-transparent rounded-lg border border-cavern-pink-50 hover:bg-cavern-pink-500/10 focus:ring-4 focus:outline-none focus:ring-cavern-pink-300;
+  }
+
+  .page-title {
+    @apply mb-4 text-4xl leading-none tracking-tight md:text-5xl lg:text-6xl underline underline-offset-2 decoration-8 decoration-cavern-pink-700;
+  }
+}

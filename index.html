@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- favicon via FreePik: https://www.flaticon.com/free-icon/map_7467241?term=italy+flag&page=1&position=37&origin=tag&related_id=7467241 -->
+  <link rel="icon" type="image/x-icon" href="/assets/map.png">
+
+  <!-- tailwind -->
+  <link href="/css/output.css" rel="stylesheet">
+
+  <!-- custom css -->
+  <link rel="stylesheet" href="/css/style.css">
+
+  <title>Kate's Trip to Italy</title>
+</head>
+
+<body class="">
+  <!-- put custom settings in [] -->
+  <a href="#main-content"
+    class="bg-cavern-pink-50 text-cavern-pink-950 absolute top-0  -left-[100%] focus:left-0 z-10">Skip to main
+    content</a>
+  <nav class="bg-cavern-pink-950 text-cavern-pink-50 flex items-center justify-between p-4">
+    <a href="/">
+      <img src="/assets/map.png" alt="paper map of Italy with Italy flag" class="h-8 w-auto">
+    </a>
+    <ul class="flex items-center gap-4">
+      <li><a class="after:w-full after:h-[2px] after:bg-cavern-pink-50 after:block" href="index.html">Home</a></li>
+      <li><a
+          class="after:w-0 after:h-[2px] after:bg-cavern-pink-50 after:block hover:after:w-full focus:after:w-full hover:after:transition-all focus:after:transition-all"
+          href="rome.html">Rome</a></li>
+      <li><a
+          class="after:w-0 after:h-[2px] after:bg-cavern-pink-50 after:block hover:after:w-full focus:after:w-full hover:after:transition-all focus:after:transition-all"
+          href="positano.html">Positano</a></li>
+      <li><a
+          class="after:w-0 after:h-[2px] after:bg-cavern-pink-50 after:block hover:after:w-full focus:after:w-full hover:after:transition-all focus:after:transition-all"
+          href="capri.html">Capri</a></li>
+    </ul>
+  </nav>
+  <header class="mx-auto max-w-7xl w-full">
+    <div class="flex flex-col md:flex-row md:items-start gap-20 py-12 px-8 mb-8">
+      <img src="/assets/gardens.JPG" alt="Me in the Bourguise Gardens"
+        class="aspect-square w-full max-w-72 h-auto rounded-full object-cover object-center self-center">
+
+      <div class="">
+        <!-- generated text with chatgpt -->
+        <!-- https://flowbite.com/docs/typography/headings/ used this for the header -->
+        <h1 class="mb-4 text-4xl leading-none tracking-tight md:text-5xl lg:text-6xl">Kate's Trip to <span
+            class="underline underline-offset-2 decoration-8 decoration-cavern-pink-700">Italy</h1>
+        <!-- chatacter limit of 60 characters -->
+        <p class="max-w-[60ch]">This summer, I embarked on an unforgettable journey through Southern Italy, immersing myself in its rich
+          history, vibrant culture, and awe-inspiring landscapes. From savoring authentic carbonara in Rome to
+          conquering the Path of the Gods in Positano, every experience was a story waiting to be told. Whether
+          marveling at the ruins of Pompeii or indulging in sun-drenched bliss on Capri, I uncovered the soul of la
+          dolce vita—one breathtaking moment at a time. I hope you enjoy this journey as much as I did.</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- https://flowbite.com/docs/components/timeline/ used this for the timeline -->
+  <main id="main-content" class="">
+    <section class="container mb-20">
+      <ol class="relative border-s border-cavern-pink-700">
+        <li class="mb-10 ms-4 ">
+          <div class="absolute w-3 h-3 bg-cavern-pink-950 rounded-full mt-1.5 -start-1.5"></div>
+          <time class="mb-1 text-sm font-normal leading-none text-cavern-pink-950">May 21, 2024</time>
+          <h2 class="text-lg font-semibold text-cavern-pink-950">Rome, Italy</h2>
+          <p class="text-base font-normal text-cavern-pink-950 mb-4">Rome is the capital of Italy and a city where
+            history and modernity collide, offering everything from ancient wonders like the Colosseum and Vatican to
+            charming cobblestone streets lined with gelaterias.</p>
+          <a href="rome.html" class="btn-primary">Learn more <svg class="w-3 h-3 ms-2 rtl:rotate-180" aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M1 5h12m0 0L9 1m4 4L9 9" />
+            </svg></a>
+        </li>
+        <li class="mb-10 ms-4">
+          <div class="absolute w-3 h-3 bg-cavern-pink-950 rounded-full mt-1.5 -start-1.5"></div>
+          <time class="mb-1 text-sm font-normal leading-none text-cavern-pink-950">May 25, 2024</time>
+          <h2 class="text-lg font-semibold text-cavern-pink-950">Pompeii, Italy</h2>
+          <p class="text-base font-normal text-cavern-pink-950 mb-4">Our brief stop in Pompeii offered a captivating
+            glimpse into ancient history, with its remarkably preserved ruins bringing the past vividly to life.</p>
+          <div id="default-carousel" class="relative w-full max-w-xl" data-carousel="static">
+            <!-- https://flowbite.com/docs/components/carousel/ used this for the carousel and followed these steps to get js working https://flowbite.com/docs/getting-started/quickstart/-->
+            <!-- Carousel wrapper -->
+            <div class="relative overflow-hidden rounded-lg h-96">
+              <!-- Item 1 -->
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="/assets/pompeii_1.jpg"
+                  class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                  alt="Ruins of Pompeii">
+              </div>
+              <!-- Item 2 -->
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="/assets/pompeii_2.jpg"
+                  class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                  alt="Ruins of an ancient villa with a mosaic floor and garden">
+              </div>
+              <!-- Item 3 -->
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="/assets/pompeii_3.jpg"
+                  class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                  alt="Courtyard of ancient villa ruins">
+              </div>
+              <!-- Item 4 -->
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="/assets/pompeii_couple_pic.jpg"
+                  class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                  alt="Me and my boyfriend in ruins of Pompeii">
+              </div>
+            </div>
+            <!-- Slider indicators -->
+            <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2 bg-cavern-pink-700/50 p-2 rounded-md">
+              <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
+                data-carousel-slide-to="0"></button>
+              <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
+                data-carousel-slide-to="1"></button>
+              <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
+                data-carousel-slide-to="2"></button>
+              <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4"
+                data-carousel-slide-to="3"></button>
+            </div>
+            <!-- Slider controls -->
+            <button type="button"
+              class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+              data-carousel-prev>
+              <span
+                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-cavern-pink-700/60 group-hover:bg-cavern-pink-700/50 group-focus:ring-4 group-focus:ring-cavern-pink-100 group-focus:outline-none">
+                <svg class="w-4 h-4 text-cavern-pink-100" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                  fill="none" viewBox="0 0 6 10">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M5 1 1 5l4 4" />
+                </svg>
+                <span class="sr-only">Previous</span>
+              </span>
+            </button>
+            <button type="button"
+              class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+              data-carousel-next>
+              <span
+                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-cavern-pink-700/60 group-hover:bg-cavern-pink-700/50 group-focus:ring-4 group-focus:ring-cavern-pink-100 group-focus:outline-none">
+                <svg class="w-4 h-4 text-cavern-pink-100" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                  fill="none" viewBox="0 0 6 10">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="m1 9 4-4-4-4" />
+                </svg>
+                <span class="sr-only">Next</span>
+              </span>
+            </button>
+          </div>
+
+        </li>
+        <li class="mb-10 ms-4">
+          <div class="absolute w-3 h-3 bg-cavern-pink-950 rounded-full mt-1.5 -start-1.5"></div>
+          <time class="mb-1 text-sm font-normal leading-none text-cavern-pink-950">May 25, 2024</time>
+          <h2 class="text-lg font-semibold text-cavern-pink-950">Positano, Italy</h2>
+          <p class="text-base font-normal text-cavern-pink-950 mb-4">Positano is a picturesque town on the Amalfi Coast,
+            where vibrant cliffside homes cascade down to crystal-clear waters. From hiking the stunning Path of the
+            Gods to indulging in fresh seafood and aperitifs at beachfront cafes, every moment felt like a postcard come
+            to life.</p>
+          <a href="positano.html" class="btn-primary">Learn more <svg class="w-3 h-3 ms-2 rtl:rotate-180" aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M1 5h12m0 0L9 1m4 4L9 9" />
+            </svg></a>
+        </li>
+        <li class="mb-10 ms-4">
+          <div class="absolute w-3 h-3 bg-cavern-pink-950 rounded-full mt-1.5 -start-1.5"></div>
+          <time class="mb-1 text-sm font-normal leading-none text-cavern-pink-950">May 28, 2024</time>
+          <h2 class="text-lg font-semibold text-cavern-pink-950">Sorrento, Italy</h2>
+          <p class="text-base font-normal text-cavern-pink-950 mb-4">Sorrento captivated us with its coastal charm, from
+            a delightful wine tasting and olive oil tour to a seaview cooking class, where we savored the rich flavors
+            of the region’s finest local produce.</p>
+          <div id="default-carousel" class="relative w-full max-w-xl" data-carousel="static">
+            <!-- https://flowbite.com/docs/components/carousel/ used this for the carousel and followed these steps to get js working https://flowbite.com/docs/getting-started/quickstart/-->
+            <!-- Carousel wrapper -->
+            <div class="relative overflow-hidden rounded-lg h-96">
+              <!-- Item 1 -->
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="/assets/sorrento_landscape_day.jpg"
+                  class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                  alt="Sorrento coastline">
+              </div>
+              <!-- Item 2 -->
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="/assets/boyfriend_wine_tasting.jpg"
+                  class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                  alt="My boyfriend tasting a red wine">
+              </div>
+              <!-- Item 3 -->
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="/assets/couple_cooking_class.jpg"
+                  class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                  alt="My boyfriend and I holding our tiramisu">
+              </div>
+              <!-- Item 4 -->
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="/assets/sorrento_sunset.jpg"
+                  class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                  alt="Sorrento coastline at sunset">
+              </div>
+            </div>
+            <!-- Slider indicators -->
+            <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2 bg-cavern-pink-700/50 p-2 rounded-md">
+              <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
+                data-carousel-slide-to="0"></button>
+              <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
+                data-carousel-slide-to="1"></button>
+              <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
+                data-carousel-slide-to="2"></button>
+              <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4"
+                data-carousel-slide-to="3"></button>
+            </div>
+            <!-- Slider controls -->
+            <button type="button"
+              class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+              data-carousel-prev>
+              <span
+                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-cavern-pink-700/60 group-hover:bg-cavern-pink-700/50 group-focus:ring-4 group-focus:ring-cavern-pink-100 group-focus:outline-none">
+                <svg class="w-4 h-4 text-cavern-pink-100" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                  fill="none" viewBox="0 0 6 10">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M5 1 1 5l4 4" />
+                </svg>
+                <span class="sr-only">Previous</span>
+              </span>
+            </button>
+            <button type="button"
+              class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+              data-carousel-next>
+              <span
+                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-cavern-pink-700/60 group-hover:bg-cavern-pink-700/50 group-focus:ring-4 group-focus:ring-cavern-pink-100 group-focus:outline-none">
+                <svg class="w-4 h-4 text-cavern-pink-100" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                  fill="none" viewBox="0 0 6 10">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="m1 9 4-4-4-4" />
+                </svg>
+                <span class="sr-only">Next</span>
+              </span>
+            </button>
+          </div>
+        </li>
+        <li class="mb-10 ms-4">
+          <div class="absolute w-3 h-3 bg-cavern-pink-950 rounded-full mt-1.5 -start-1.5"></div>
+          <time class="mb-1 text-sm font-normal leading-none text-cavern-pink-950">May 29, 2024</time>
+          <h2 class="text-lg font-semibold text-cavern-pink-950">Capri, Italy</h2>
+          <p class="text-base font-normal text-cavern-pink-950 mb-4">Capri is a glamorous island escape, where sparkling
+            turquoise waters meet dramatic cliffs and luxury abounds. Between lounging at beach clubs, exploring the
+            Gardens of Augustus, and savoring fine dining with breathtaking views, the island’s timeless elegance left
+            us in awe.</p>
+          <a href="capri.html" class="btn-primary">Learn more <svg class="w-3 h-3 ms-2 rtl:rotate-180" aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M1 5h12m0 0L9 1m4 4L9 9" />
+            </svg></a>
+        </li>
+      </ol>
+    </section>
+    <section class="w-full bg-cavern-pink-950 text-cavern-pink-50">
+      <div class="container p-8 flex items-center justify-center flex-col min-h-72 gap-8">
+        <h2 class="text-3xl font-semibold">Get the Itinerary</h2>
+        <div class="flex sm:flex-row flex-col items-center justify-center gap-4 w-full">
+          <!-- https://docs.google.com/document/d/1Ok0--hUHoUJG_Sr4dRz8ghDQ_8ek2D9R/edit?usp=sharing&ouid=115963810738754091372&rtpof=true&sd=true -->
+          <button class="btn-secondary w-full sm:w-48" id="pdf-preview-btn">
+            View
+          </button>
+          
+          <!-- download a pdf from "<a>" tag: https://www.w3schools.com/tags/att_a_download.asp -->
+            <a class="btn-secondary-outline w-full sm:w-48" href="/assets/itinerary.pdf" download>
+              Download
+            </a>
+          </div>
+        </div>
+      </section>
+  </main>
+<!-- https://flowbite.com/docs/components/footer/ used for footer guide -->
+<footer class="bg-cavern-pink-700 ">
+  <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+    <span class="text-sm text-cavern-pink-50 sm:text-center">© 2024. Kate Lilly. SI 539
+  </span>
+  <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-cavern-pink-50 sm:mt-0">
+      <li>
+          <a href="index.html" class="hover:underline me-4 md:me-6">Home</a>
+      </li>
+      <li>
+          <a href="rome.html" class="hover:underline me-4 md:me-6">Rome</a>
+      </li>
+      <li>
+          <a href="positano.html" class="hover:underline me-4 md:me-6">Positano</a>
+      </li>
+      <li>
+          <a href="capri.html" class="hover:underline">Capri</a>
+      </li>
+  </ul>
+  </div>
+</footer>
+
+  
+  <!-- pdf iframe lightbox - looked at stack overflow -->
+  <div id="overlay" class="hidden z-50 fixed w-full h-screen left-0 top-0 bg-black/70 backdrop-blur place-items-center py-20">
+    <button id="overlay-close" class="h-10 w-10 inline-flex absolute border-white border text-white items-center justify-center top-10 right-4">X</button>
+    <iframe id="pdf" src="http://docs.google.com/gview?a=v&pid=explorer&chrome=false&api=true&embedded=true&srcid=1Ok0--hUHoUJG_Sr4dRz8ghDQ_8ek2D9R&hl=en&embedded=true" class="hidden w-full max-w-7xl p-4 h-full" style="" frameborder="0"></iframe>
+  </div> 
+
+
+  <!-- flowbite carousel js -->
+  <script src="./node_modules/flowbite/dist/flowbite.js">
+  </script>
+
+  <!-- pdf preview button - stack overflow and copilot helped to get the js working -->
+  <script>
+    const pdfBtn = document.getElementById('pdf-preview-btn');
+    pdfBtn.addEventListener('click', function () {
+      const overlay = document.querySelector('#overlay');
+      overlay.classList.remove('hidden');
+      overlay.classList.add('grid');
+
+      const iframe = document.querySelector('#pdf');
+      iframe.classList.remove('hidden');
+      iframe.classList.add('block');
+    });
+
+    const overlayCloseBtn = document.getElementById('overlay-close');
+    overlayCloseBtn.addEventListener('click', function () {
+      const overlay = document.querySelector('#overlay');
+      overlay.classList.remove('grid');
+      overlay.classList.add('hidden');
+    });
+
+  </script>
+
+</body>
+
+</html>
